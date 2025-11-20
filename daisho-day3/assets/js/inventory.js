@@ -56,7 +56,7 @@ function changeStock(id, diff) {
     // diff 分だけ在庫数を増減させる
     item.stock += diff;
     // 在庫がマイナスにならないように 0 で止める
-    if (item.stock <0) {
+    if (item.stock < 0) {
         item.stock = 0;
     }
 
